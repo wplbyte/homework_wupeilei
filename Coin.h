@@ -1,4 +1,4 @@
-#ifndef COIN_H
+ï»¿#ifndef COIN_H
 #define COIN_H
 #pragma comment(lib, "MSIMG32.LIB")
 #include <graphics.h>
@@ -8,8 +8,8 @@ class Coin :public GameObject
 private:
 	int score;
 	IMAGE imgCoin;
-	DWORD startTime; // ½ğ±Ò¿ªÊ¼Éú³ÉµÄÊ±¼ä
-	const int LIVE_TIME = 5000; // ½ğ±Ò³öÏÖ5sºó×Ô¶¯ÏûÊ§
+	DWORD startTime; // é‡‘å¸å¼€å§‹ç”Ÿæˆçš„æ—¶é—´
+	const int LIVE_TIME = 5000; // é‡‘å¸å‡ºç°5såè‡ªåŠ¨æ¶ˆå¤±
 public:
 	Coin(int x0,int y0,int s);
 	virtual void Update();

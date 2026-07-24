@@ -1,4 +1,4 @@
-#ifndef BULLET_H
+ï»¿#ifndef BULLET_H
 #define BULLET_H
 #pragma comment(lib, "MSIMG32.LIB")
 #include <graphics.h>
@@ -7,7 +7,7 @@ class Bullet:public GameObject
 {
 private:
 	double degree;
-	int vb;//×Óµ¯µÄËÙ¶È
+	int vb;//å­å¼¹çš„é€Ÿåº¦
 	int hurt;
 	int num;
 public:

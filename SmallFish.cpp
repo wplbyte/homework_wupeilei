@@ -1,31 +1,31 @@
-#include "SmallFish.h"
+ï»¿#include "SmallFish.h"
 #include "extern.h"
 SmallFish::SmallFish()
 {
 	w = 40;
 	h = 40;
 	v = 1;
-	value = 5;//Ğ¡ÓãËÀµÃ·ÖÎª5
-	life = 5;//Ğ¡ÓãÑªÁ¿Îª5
+	value = 5;//å°é±¼æ­»å¾—åˆ†ä¸º5
+	life = 5;//å°é±¼è¡€é‡ä¸º5
 	isLiving = true;
 	animIndex = 0;
 	animTimer = 0;
-	TCHAR imgPath[256]; //¶¯»­Í¼Æ¬ÎÄ¼şÂ·¾¶
-	for (int i = 0; i < IMAGE_NUM; i++) //¼ÓÔØ¶¯»­Í¼Æ¬
+	TCHAR imgPath[256]; //åŠ¨ç”»å›¾ç‰‡æ–‡ä»¶è·¯å¾„
+	for (int i = 0; i < IMAGE_NUM; i++) //åŠ è½½åŠ¨ç”»å›¾ç‰‡
 	{
-		_stprintf_s(imgPath, _T("images\\small\\%d.png"), i + 1); //¶¯»­Í¼Æ¬Â·¾¶£¨¸ñÊ½×ª»»£©
-		loadimage(&fishAnimFrames[i], imgPath); //¼ÓÔØ¶¯»­Í¼Æ¬
+		_stprintf_s(imgPath, _T("images\\small\\%d.png"), i + 1); //åŠ¨ç”»å›¾ç‰‡è·¯å¾„ï¼ˆæ ¼å¼è½¬æ¢ï¼‰
+		loadimage(&fishAnimFrames[i], imgPath); //åŠ è½½åŠ¨ç”»å›¾ç‰‡
 	}
 }
 void SmallFish::Update()
 {
 	if (!isLiving) return;
-	// Ğ¡Óã³ÖĞøÏòÓÒÆ½ÒÆ
+	// å°é±¼æŒç»­å‘å³å¹³ç§»
 	x += v;
-	// ±ß½çÑ­»·£ºÒÆ³öÆÁÄ»ÓÒ²à£¬´Ó×ó²àÖØĞÂ½øÈë
+	// è¾¹ç•Œå¾ªç¯ï¼šç§»å‡ºå±å¹•å³ä¾§ï¼Œä»å·¦ä¾§é‡æ–°è¿›å…¥
 	if (x > WINDOW_WIDTH)
 		x = -w;
-	// 2. Ö¡¶¯»­ÇĞ»»Âß¼­£¨ÍêÈ«¸´¿Ì·¶Àı¼ÆÊ±Æ÷Âß¼­£©
+	// 2. å¸§åŠ¨ç”»åˆ‡æ¢é€»è¾‘ï¼ˆå®Œå…¨å¤åˆ»èŒƒä¾‹è®¡æ—¶å™¨é€»è¾‘ï¼‰
 	animTimer += 5;
 	if (animTimer >= FRAME_INTERVAL)
 	{
@@ -36,6 +36,6 @@ void SmallFish::Update()
 void SmallFish::Draw()
 {
 	if (!isLiving) return;
-	// »æÖÆµ±Ç°¶¯»­Ö¡£¨Í¸Ã÷äÖÈ¾£¬ÎŞºÚ±ß£©
+	// ç»˜åˆ¶å½“å‰åŠ¨ç”»å¸§ï¼ˆé€æ˜æ¸²æŸ“ï¼Œæ— é»‘è¾¹ï¼‰
 	putimage_alpha(x, y, &fishAnimFrames[animIndex]);
 }

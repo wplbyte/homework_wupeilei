@@ -1,4 +1,4 @@
-#include "StartScene.h"
+ï»¿#include "StartScene.h"
 #include "extern.h"
 StartScene::StartScene()
 {
@@ -15,21 +15,21 @@ void StartScene::Draw()
     putimage(0, 0, &background);
     setbkmode(TRANSPARENT);
     settextcolor(WHITE);
-    settextstyle(60, 0, _T("ºÚÌå"));
-    TCHAR title[] = _T("²¶ÓãÓÎÏ·");
+    settextstyle(60, 0, _T("é»‘ä½“"));
+    TCHAR title[] = _T("æ•é±¼æ¸¸æˆ");
     outtextxy(WINDOW_WIDTH / 2 - 120, 150, title);
-    //ÓÎÏ·¹æÔò°´Å¥
+    //æ¸¸æˆè§„åˆ™æŒ‰é’®
     setfillcolor(RGB(30, 120, 200));
     solidrectangle(WINDOW_WIDTH / 2 - 100, 320, WINDOW_WIDTH / 2 + 100, 400);
     settextcolor(WHITE);
-    settextstyle(30, 0, _T("ËÎÌå"));
-    outtextxy(WINDOW_WIDTH / 2 - 75, 345, _T("ÓÎÏ·¹æÔò"));
-    // ¿ªÊ¼°´Å¥
+    settextstyle(30, 0, _T("å®‹ä½“"));
+    outtextxy(WINDOW_WIDTH / 2 - 75, 345, _T("æ¸¸æˆè§„åˆ™"));
+    // å¼€å§‹æŒ‰é’®
     setfillcolor(GREEN);
     solidrectangle(WINDOW_WIDTH / 2 - 100, 400, WINDOW_WIDTH / 2 + 100, 480);
     settextcolor(WHITE);
-    settextstyle(30, 0, _T("ºÚÌå"));
-    TCHAR btnText[] = _T("µã»÷¿ªÊ¼ÓÎÏ·");
+    settextstyle(30, 0, _T("é»‘ä½“"));
+    TCHAR btnText[] = _T("ç‚¹å‡»å¼€å§‹æ¸¸æˆ");
     outtextxy(WINDOW_WIDTH / 2 - 85, 420, btnText);
     Click = false;
 }

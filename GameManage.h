@@ -1,4 +1,4 @@
-#ifndef GAMEMANAGE_H
+ï»¿#ifndef GAMEMANAGE_H
 #define GAMEMANAGE_H
 #pragma comment(lib, "MSIMG32.LIB")
 #include <graphics.h>
@@ -21,14 +21,14 @@ private:
 	Collision collision;
 	int score;
 	DWORD lastTime;
-	int frameCount;                       // Ö¡¼ÆÊıÆ÷
-	static const int FISH_UPDATE_SKIP = 6;    // ÓãÃ¿3Ö¡¸üĞÂÒ»´Î£¬½µµÍÒÆ¶¯ËÙ¶È
-	static const int MAX_FISH = 5;           // ×î´óÓãÊıÁ¿£¬±ÜÃâ»­ÃæÓµ¼·
-	static const int MIN_FISH_GAP = 200;       // ÓãÖ®¼ä×îĞ¡Y¼ä¾à£¬±ÜÃâÖØµş
-	int fireCount;    // ÒÑ·¢Éä×Óµ¯¼ÆÊı
-	const int MAX_BULLET_ALL = 30; // ×ÜÅÚµ¯ÉÏÏŞ10·¢
-	bool isStartScene; // ±ê¼Çµ±Ç°ÊÇ·ñÊÇ¿ªÊ¼½çÃæ
-	StartScene startUI; // Ê×Ò³¶ÔÏó
+	int frameCount;                       // å¸§è®¡æ•°å™¨
+	static const int FISH_UPDATE_SKIP = 6;    // é±¼æ¯3å¸§æ›´æ–°ä¸€æ¬¡ï¼Œé™ä½ç§»åŠ¨é€Ÿåº¦
+	static const int MAX_FISH = 5;           // æœ€å¤§é±¼æ•°é‡ï¼Œé¿å…ç”»é¢æ‹¥æŒ¤
+	static const int MIN_FISH_GAP = 200;       // é±¼ä¹‹é—´æœ€å°Yé—´è·ï¼Œé¿å…é‡å 
+	int fireCount;    // å·²å‘å°„å­å¼¹è®¡æ•°
+	const int MAX_BULLET_ALL = 30; // æ€»ç‚®å¼¹ä¸Šé™10å‘
+	bool isStartScene; // æ ‡è®°å½“å‰æ˜¯å¦æ˜¯å¼€å§‹ç•Œé¢
+	StartScene startUI; // é¦–é¡µå¯¹è±¡
 public:
 	GameManage();
 	~GameManage();

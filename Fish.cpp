@@ -1,4 +1,4 @@
-#include "Fish.h"
+﻿#include "Fish.h"
 void Fish::Die()
 {
 	isLiving = false;

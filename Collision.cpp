@@ -1,7 +1,7 @@
-#include "Collision.h"
+ï»¿#include "Collision.h"
 bool Collision::isCollision(GameObject& a, GameObject& b)
 {
-	bool h = (a.getX() <= b.getX() + b.getW()) && (b.getX() <= a.getX() + a.getW());//ÅÐ¶ÏË®Æ½·½ÏòÊÇ·ñ·¢ÉúÅö×²
-	bool v = (a.getY() <= b.getY() + b.getH()) && (b.getY() <= a.getY() + a.getH());//ÅÐ¶Ï´¹Ö±·½ÏòÊÇ·ñ·¢ÉúÅö×²
-	return h && v;//Ë®Æ½ÊúÖ±Í¬Ê±ÓÐ½Ó´¥²ÅËãÅö×²
+	bool h = (a.getX() <= b.getX() + b.getW()) && (b.getX() <= a.getX() + a.getW());//åˆ¤æ–­æ°´å¹³æ–¹å‘æ˜¯å¦å‘ç”Ÿç¢°æ’ž
+	bool v = (a.getY() <= b.getY() + b.getH()) && (b.getY() <= a.getY() + a.getH());//åˆ¤æ–­åž‚ç›´æ–¹å‘æ˜¯å¦å‘ç”Ÿç¢°æ’ž
+	return h && v;//æ°´å¹³ç«–ç›´åŒæ—¶æœ‰æŽ¥è§¦æ‰ç®—ç¢°æ’ž
 }

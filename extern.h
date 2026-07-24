@@ -1,4 +1,4 @@
-#ifndef EXTERN_H
+﻿#ifndef EXTERN_H
 #define EXTERN_H
 
 const int INTERVAL = 3000;

@@ -1,4 +1,4 @@
-#ifndef SMALLFISH_H
+﻿#ifndef SMALLFISH_H
 #define SMALLFISH_H
 #pragma comment(lib, "MSIMG32.LIB")
 #include <graphics.h>

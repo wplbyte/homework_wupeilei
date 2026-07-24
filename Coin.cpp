@@ -1,4 +1,4 @@
-#include "Coin.h"
+﻿#include "Coin.h"
 #include<graphics.h>
 #include "extern.h"
 Coin::Coin(int x0, int y0,int s)

@@ -1,4 +1,4 @@
-#ifndef BIGFISH_H
+﻿#ifndef BIGFISH_H
 #define BIGFISH_H
 #pragma comment(lib, "MSIMG32.LIB")
 #include <graphics.h>

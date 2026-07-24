@@ -1,4 +1,4 @@
-#include "Cannon.h"
+ï»¿#include "Cannon.h"
 #include<graphics.h>
 #include<math.h>
 #include "extern.h"
@@ -9,7 +9,7 @@ Cannon::Cannon()
 	h = 40;
 	x = WINDOW_WIDTH / 2 - w / 2;
 	y = WINDOW_HEIGHT - h;
-	degree = -90;//³õÊ¼Ä¬ÈÏÅÚ¿Ú³¯ÉÏ
+	degree = -90;//åˆå§‹é»˜è®¤ç‚®å£æœä¸Š
 }
 void Cannon::Update()
 {
@@ -22,21 +22,21 @@ void Cannon::aimAt(int mx, int my)
 	double dy = my - cy;
 	degree = atan2(dy, dx) * 180 / PI;
 }
-//ÓÃÔ­ĞÍ±íÊ¾µ××ù£¬¾ØĞÎ±íÊ¾ÅÚ¹Ü£¬ÅÚ¹ÜµÄÊıÑ§¼ÆËã¸öÈËÈÏÎªÓĞÒ»¶¨ÄÑ¶È
+//ç”¨åŸå‹è¡¨ç¤ºåº•åº§ï¼ŒçŸ©å½¢è¡¨ç¤ºç‚®ç®¡ï¼Œç‚®ç®¡çš„æ•°å­¦è®¡ç®—ä¸ªäººè®¤ä¸ºæœ‰ä¸€å®šéš¾åº¦
 void Cannon::Draw()
 {
 	int cx = x + w/ 2;
 	int cy = y + h/ 2;
 
-	//Ô²ĞÎµ××ù
+	//åœ†å½¢åº•åº§
 	setfillcolor(RGB(60, 60, 60));
 	fillcircle(cx, cy, 35);
 
 	double rad = degree * PI / 180.0;
-	int len = 55;// ÅÚ¹Ü³¤¶È
-	int thick = 12;// ÅÚ¹Ü´ÖÏ¸
+	int len = 55;// ç‚®ç®¡é•¿åº¦
+	int thick = 12;// ç‚®ç®¡ç²—ç»†
 
-	// ¾ØĞÎËÄ¸ö¶¥µã¼ÆËã
+	// çŸ©å½¢å››ä¸ªé¡¶ç‚¹è®¡ç®—
 	POINT p[4] = {
 		{ (int)(cx + cos(rad) * len), (int)(cy + sin(rad) * len) },
 		{ (int)(cx + cos(rad + PI / 2) * thick / 2), (int)(cy + sin(rad + PI / 2) * thick / 2) },

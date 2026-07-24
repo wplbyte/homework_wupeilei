@@ -1,4 +1,4 @@
-#ifndef MIDFISH_H
+﻿#ifndef MIDFISH_H
 #define MIDFISH_H
 #pragma comment(lib, "MSIMG32.LIB")
 #include <graphics.h>
